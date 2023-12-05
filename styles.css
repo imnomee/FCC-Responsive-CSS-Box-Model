@@ -1,0 +1,65 @@
+.canvas {
+    width: 500px;
+    height: 600px;
+    background-color: #4d0f00;
+    /* adding the padding increased the size of canvas */
+    overflow: hidden;
+    /* padding: 1px; */
+
+    /* The colors and shapes of your painting are too sharp to pass as a Rothko.*/
+    filter: blur(2px);
+}
+
+.frame {
+    border: 50px solid black;
+    margin: 20px auto;
+    width: 500px;
+    padding: 50px;
+}
+
+.one {
+    width: 425px;
+    height: 150px;
+    background-color: #efb762;
+    /* Now .one is centered horizontally,
+    but its top margin is pushing past the canvas and onto the frame's border,
+    shifting the entire canvas down 20 pixels.*/
+    margin: 20px auto;
+    box-shadow: 0 0 3px 3px #efb762;
+    border-radius: 9px;
+
+    /* we can rotate the box using transform rotate */
+    transform: rotate(-0.6deg);
+}
+
+.two {
+    width: 475px;
+    height: 200px;
+    background-color: #8f0401;
+    margin: 20px auto;
+    box-shadow: 0 0 3px 3px #8f0401;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 10px;
+    transform: rotate(0.4deg);
+}
+
+.one,
+.two {
+    /* additional blur filter on 1 and 2 */
+    filter: blur(1px);
+}
+
+.three {
+    width: 91%;
+    height: 28%;
+    background-color: #b20403;
+    margin: auto;
+    /* more blur on 3 */
+    filter: blur(2px);
+    box-shadow: 0 0 5px 5px #b20403;
+    /* border radius 4 properties together: top-left, top-right, bottom-right, bottom-left */
+    border-radius: 30px 25px 60px 12px;
+    transform: rotate(-0.2deg);
+}
